@@ -7,4 +7,4 @@ const nextConfig = {
   /* ... */
 };
 
-export {nextConfig};
+module.exports = nextConfig;
