@@ -11,8 +11,9 @@ async function helloWorld(name: string) {
   });
 }
 
-// the function must be wrapped with `defer()` and exported as default;
-// set to run every minute of every hour on Saturday
-export default defer.cron(helloWorld, "* * * * 6");
+//Run every minute of Saturday
+//export default defer.cron(helloWorld, "* * * * 6");
 
 
+// the function must be wrapped with `defer()` and exported as default
+export default defer(helloWorld);
